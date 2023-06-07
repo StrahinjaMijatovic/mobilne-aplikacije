@@ -564,6 +564,7 @@
                     android:background="@null"
                     android:scaleType="fitCenter"/>
             </LinearLayout>
+
         </RelativeLayout>
     </RelativeLayout>
 </FrameLayout>

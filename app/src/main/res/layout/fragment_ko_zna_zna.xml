@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmenti.KoZnaZnaFragment"
+    android:background="@color/pozadina">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@color/pozadina">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/covek"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strajaa"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/poeniLeviIgrac"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="100"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/covek"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ficaa"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/poeniDesniIgrac"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="0"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:layout_marginTop="140dp">
+
+
+
+            <TextView
+                android:id="@+id/pitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="70sp"
+                android:layout_marginEnd="30sp"
+                android:layout_marginBottom="30sp"
+                android:text="Najbolji klub na svetu je "
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+        <GridLayout
+            android:id="@+id/gridKoZnaZna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pitanje"
+            android:columnCount="1"
+            android:rowCount="4"
+            android:paddingHorizontal="30sp">
+            <TextView
+                android:id="@+id/odgovor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:text="Partizan"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/odgovor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:text="Partizan"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/odgovor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:text="Partizan"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/odgovor4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:text="Partizan"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+        </GridLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/koZnaZnaBtnNeZnam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/gridKoZnaZna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dalje"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/koZnaZnaDalje"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/pozadina"
+        android:src="@drawable/arrow"/>
+</FrameLayout>
